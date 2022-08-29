@@ -1,0 +1,154 @@
+html,
+body {
+  background: #6765ff;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  text-align: center;
+  color: white;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+  background: #8b89ff;
+  padding: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 2%;
+}
+
+input {
+  display: block;
+  width: 300px;
+  margin: 26px auto;
+  padding: 17px;
+  border-radius: 25px;
+  border: 2.5px dotted #2523c4;
+  color: #2523c4;
+  outline: none;
+  font-weight: 600;
+}
+
+/* Buttons */
+
+.submit {
+  color: white;
+  font-weight: 600;
+  background-color: #2523c4;
+  border: none;
+  border-radius: 20px;
+  padding: 17px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.submit:hover {
+  background-color: #3e3be7;
+}
+
+.button {
+  color: white;
+  width: 100%;
+  max-width: 300px;
+  font-weight: 600;
+  background-color: #2523c4;
+  border: none;
+  border-radius: 20px;
+  padding: 17px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.button:hover {
+  background-color: #3e3be7;
+}
+
+.privacy {
+  font-size: 14px;
+  color: rgb(218, 216, 216);
+}
+
+/* Validation JS */
+.succeed {
+  border: 3px solid rgb(40, 148, 40);
+  color: rgb(40, 148, 40);
+}
+
+.failed {
+  border: 3px solid crimson;
+  color: crimson;
+}
+
+input + .required {
+  opacity: 0;
+  height: 0;
+  color: rgb(184, 25, 25);
+  font-weight: bold;
+  margin: 0px 10px;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+input.failed + .required {
+  opacity: 1;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* PopUp */
+
+.popup-wrapper {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  border-radius: 20px;
+}
+.popup {
+  font-family: arial;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  height: 100%;
+  max-height: 140px;
+  margin: 10% auto;
+  padding: 20px;
+  background: #8b89ff;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.popup-close {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  cursor: pointer;
+}
+h4 {
+  padding: 10px;
+}
+
+.link-account {
+  color: white;
+  text-decoration: none;
+  margin: 16px;
+  padding: 10px;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.link-account:hover {
+  background: #2523c4;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact Form</title>
+  </head>
+  <body>
+    <form class="signup-form">
+      <h2 class="sing_up">Sign Up</h2>
+      <input type="email" name="email" placeholder="Email" required />
+      <p class="required">Email must be a valid address, e.g.me@mydomain.com</p>
+      <input type="text" name="username" placeholder="Username" required  minlength="5"/>
+      <p class="required">
+        Username must be alphanumeric and contain 5-12 charaters
+      </p>
+      <input type="password" name="password" placeholder="Password" required minlength="8"/>
+      <p class="required">
+        Password must alphanumeric (@._ and - are also allowed) and be 8-20
+        charaters
+      </p>
+      <input type="submit" value="Create Account" class="submit" />
+      <p style="font-weight: 600">Or</p>
+      <button type="button" class="button">Login as a Guest</button>
+      <p class="privacy">
+        By clicking Create Account, you agree to our <a href="#">Terms</a> and
+        <a href="#">Privacy Policy</a>
+      </p>
+    </form>
+
+    <div class="popup-wrapper">
+      <div class="popup">
+        <div class="popup-close">x</div>
+        <div class="popup-content">
+          <h4>You are sure do you want continue without creating an account!</h4>
+          <a href="#" class="link-account">Create account</a>
+          <a href="#" class="link-account">Continue</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="sandbox.js"></script>
+  </body>
+</html>
